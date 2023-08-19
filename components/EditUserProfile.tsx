@@ -29,33 +29,38 @@ export const EditUserProfileComponent = () => {
     <div>
       <h2>Edit Profile</h2>
       <form onSubmit={handleSubmit}>
-        <label>
-          Name:
-          <input
-            type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-        </label>
-        <br />
-        <label>
-          Date of Birth:
-          <input
-            type="date"
-            value={dateOfBirth}
-            onChange={(e) => setDateOfBirth(e.target.value)}
-          />
-        </label>
-        <br />
-        <label>
-          Roles:
-          <input
-            type="text"
-            value={roles}
-            onChange={(e) => setRoles(e.target.value)}
-          />
-        </label>
-        <br />
+        <p>
+          <label>
+            Name:{' '}
+            <input
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+          </label>
+        </p>
+
+        <p>
+          <label>
+            Date of Birth:{' '}
+            <input
+              type="date"
+              value={dateOfBirth}
+              onChange={(e) => setDateOfBirth(e.target.value)}
+            />
+          </label>
+        </p>
+
+        <p>
+          <label>
+            Roles:{' '}
+            <input
+              type="text"
+              value={roles}
+              onChange={(e) => setRoles(e.target.value)}
+            />
+          </label>
+        </p>
         <button type="submit">Save</button>
       </form>
     </div>
